@@ -26,6 +26,20 @@ export type TOrder = {
   ingredients: string[];
 };
 
+export type TOrderInfo = {
+  _id: string;
+  status: string;
+  name: string;
+  createdAt: string;
+  updatedAt: string;
+  number: number;
+  ingredientsInfo: {
+    [key: string]: TIngredient & { count: number };
+  };
+  date: Date;
+  total: number;
+};
+
 export type TOrdersData = {
   orders: TOrder[];
   total: number;
