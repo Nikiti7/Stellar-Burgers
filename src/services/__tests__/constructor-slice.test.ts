@@ -1,3 +1,4 @@
+import { TConstructorIngredient } from 'utils/types';
 import constructorReducer, {
   addIngredient,
   removeIngredient,
@@ -5,8 +6,6 @@ import constructorReducer, {
   setOrderRequest,
   setOrderModalData
 } from '../slices/constructor/constructor-slice';
-
-import { TConstructorIngredient } from '@utils-types';
 
 const mockIngredient = (overrides = {}): TConstructorIngredient => ({
   _id: '123',

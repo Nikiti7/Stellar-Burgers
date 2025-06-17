@@ -1,6 +1,6 @@
-import { getFeedsApi } from '@api';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { TOrder } from '@utils-types';
+import { getFeedsApi } from 'utils/burger-api';
+import { TOrder } from 'utils/types';
 
 interface FeedState {
   orders: TOrder[];

@@ -1,8 +1,9 @@
 // src/services/__tests__/ingredients-slice.test.ts
+import { TIngredient } from 'utils/types';
 import ingredientsReducer, {
   fetchIngredients
 } from '../slices/ingredients/ingredients-slice';
-import { TIngredient } from '@utils-types';
+
 import { AnyAction } from 'redux';
 
 const mockIngredient: TIngredient = {

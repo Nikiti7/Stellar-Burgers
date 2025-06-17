@@ -1,21 +1,22 @@
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import '../../index.css';
 
-import { AppHeader } from '@components';
+import { ProtectedRoute } from '../protected-route';
+import { AppHeader } from 'components/app-header';
 import {
   ConstructorPage,
   Feed,
-  Login,
-  Register,
   ForgotPassword,
-  ResetPassword,
+  Login,
+  NotFound404,
   Profile,
   ProfileOrders,
-  NotFound404
-} from '@pages';
-
-import { OrderInfo, IngredientDetails, Modal } from '@components';
-import { ProtectedRoute } from '../protected-route';
+  Register,
+  ResetPassword
+} from 'pages';
+import { IngredientDetails } from 'components/ingredient-details';
+import { Modal } from 'components/modal';
+import { OrderInfo } from 'components/order-info';
 
 const App = () => {
   const location = useLocation();
